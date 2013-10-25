@@ -1,0 +1,853 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mug",
+				"mugshotDialog"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"peerCo",
+				"peerConnections"
+			],
+			[
+				"local",
+				"localVideoStream"
+			],
+			[
+				"rtcPeer",
+				"rtcPeerConnection"
+			],
+			[
+				"peer",
+				"peerConnections"
+			],
+			[
+				"connec",
+				"connectionManager"
+			],
+			[
+				"recei",
+				"receivedIceCandidate"
+			],
+			[
+				"new",
+				"newDescription"
+			],
+			[
+				"onRemo",
+				"onRemoteStreamAdded"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"Test",
+				"TestSets"
+			],
+			[
+				"print",
+				"println"
+			],
+			[
+				"User",
+				"UserSchema"
+			],
+			[
+				"do",
+				"dob	Insert do |variable| … end"
+			],
+			[
+				"muni",
+				"municipality"
+			],
+			[
+				"lesson",
+				"lesson_id"
+			],
+			[
+				"wel",
+				"welcome_email_subject"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 166,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 335,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 652,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/services.js",
+			"settings":
+			{
+				"buffer_size": 1176,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/app.js",
+			"settings":
+			{
+				"buffer_size": 563,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/partials/users.jade",
+			"settings":
+			{
+				"buffer_size": 48,
+				"line_ending": "Unix",
+				"name": "Users index"
+			}
+		},
+		{
+			"file": "views/partials/register.jade",
+			"settings":
+			{
+				"buffer_size": 100,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 2260,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 129.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/marikka/dev/chattoa/routes/socket.js",
+		"/Users/marikka/tmp/chatto/public/js/ConnectionManager.js",
+		"/Users/marikka/dev/chatto/public/coffee/ConnectionManager.coffee",
+		"/Users/marikka/dev/chatto/js/main.js",
+		"/Users/marikka/dev/palabras/package.json",
+		"/Users/marikka/dev/progfun/recfun/src/main/scala/recfun/Main.scala",
+		"/Users/marikka/dev/progfun/recfun/src/test/scala/recfun/BalanceSuite.scala",
+		"/Users/marikka/dev/progfun/funsets/src/main/scala/funsets/Main.scala",
+		"/Users/marikka/Desktop/FunSets.scala",
+		"/Users/marikka/Desktop/FunSetSuite.scala",
+		"/Users/marikka/dev/progfun/funsets/src/main/scala/funsets/FunSets.scala",
+		"/Users/marikka/.bash_profile",
+		"/Users/marikka/Desktop/d.txt",
+		"/Users/marikka/Tyot/dating2/app/assets/stylesheets/messages.css.scss",
+		"/Users/marikka/Tyot/dating2/app/assets/stylesheets/application.css.scss",
+		"/Users/marikka/tmp/foobar/app/views/layouts/application.html.erb",
+		"/Users/marikka/Tyot/dating2/app/models/message.rb",
+		"/Users/marikka/Tyot/dating2/app/models/user.rb",
+		"/Users/marikka/Tyot/dating2/db/seeds.rb",
+		"/Users/marikka/Tyot/dating2/lib/tasks/fake.rake",
+		"/Users/marikka/Tyot/dating2/app/views/messages/new.html.slim",
+		"/Users/marikka/Tyot/dating2/app/controllers/messages_controller.rb",
+		"/Users/marikka/Tyot/dating2/app/views/messages/index.html.slim",
+		"/Users/marikka/Tyot/dating2/config/routes.rb",
+		"/Users/marikka/Tyot/dating2/log/development.log",
+		"/Users/marikka/Tyot/dating2/config/initializers/backtrace_silencers.rb",
+		"/Users/marikka/Tyot/dating2/app/views/layouts/application.html.slim",
+		"/Users/marikka/Tyot/dating2/app/controllers/sessions_controller.rb",
+		"/Users/marikka/Tyot/dating2/app/views/searches/new.html.slim",
+		"/Users/marikka/Tyot/dating2/app/views/home/index.html.slim",
+		"/Users/marikka/Tyot/dating2/app/views/users/index.html.slim",
+		"/Users/marikka/tmp/foobar/config/environments/development.rb",
+		"/Users/marikka/tmp/foobar/app/views/users/new.html.erb",
+		"/Users/marikka/Työt/dating2/app/assets/stylesheets/screen.css.scss",
+		"/Users/marikka/Työt/dating2/app/assets/stylesheets/layout.css.scss",
+		"/Users/marikka/Työt/dating2/app/assets/stylesheets/application.css.scss",
+		"/Users/marikka/tmp/foobar/public/500.html",
+		"/Users/marikka/Työt/dating2/config/application.rb",
+		"/Users/marikka/Työt/dating2/Gemfile",
+		"/Users/marikka/tmp/foobar/config/boot.rb",
+		"/Users/marikka/tmp/foobar/Gemfile",
+		"/Users/marikka/tmp/foobar/config/application.rb",
+		"/Users/marikka/tmp/foobar/config.ru",
+		"/Users/marikka/Työt/dating2/config/boot.rb",
+		"/Users/marikka/tmp/foobar/config/environment.rb",
+		"/Users/marikka/Työt/dating2/app/views/messages/new.html.erb",
+		"/Users/marikka/Työt/tanko/db/schema.rb",
+		"/Users/marikka/Työt/tanko/app/views/devise/registrations/edit.html.slim",
+		"/Users/marikka/Työt/dating2/app/controllers/searches_controller.rb",
+		"/Users/marikka/Työt/tanko/app/controllers/application_controller.rb",
+		"/Users/marikka/Työt/dating2/app/assets/stylesheets/partials/_base.css.scss",
+		"/Users/marikka/Työt/dating2/app/assets/stylesheets/home.css.scss",
+		"/Users/marikka/Työt/tanko/app/views/layouts/application.html.slim",
+		"/Users/marikka/Työt/dating2/app/views/layouts/application.html.erb",
+		"/Users/marikka/Työt/dating2/app/models/user.rb",
+		"/Users/marikka/Työt/dating2/app/controllers/application_controller.rb",
+		"/Users/marikka/Työt/dating2/config/routes.rb",
+		"/Users/marikka/Työt/dating2/config/initializers/omniauth.rb",
+		"/Users/marikka/Työt/tanko/app/models/user.rb",
+		"/Users/marikka/Työt/tanko/app/controllers/users_controller.rb",
+		"/Users/marikka/Työt/dating2/lib/tasks/fake.rake",
+		"/Users/marikka/Työt/dating2/app/views/searches/show.html.slim",
+		"/Users/marikka/Työt/dating2/app/views/users/_user.html.slim",
+		"/Users/marikka/Työt/dating2/config/environments/development.rb",
+		"/Users/marikka/Työt/tanko/lib/tasks/populate.rake",
+		"/Users/marikka/Työt/dating2/db/schema.rb",
+		"/Users/marikka/Työt/dating2/app/models/search.rb",
+		"/Users/marikka/Työt/dating2/db/migrate/20120412155138_rename_gender_to_gender_id_on_user.rb",
+		"/Users/marikka/Työt/dating2/app/models/county.rb",
+		"/Users/marikka/Työt/dating2/db/seeds.rb",
+		"/Users/marikka/Työt/dating2/app/controllers/sessions_controller.rb",
+		"/Users/marikka/Työt/dating2/app/models/municipality.rb",
+		"/Users/marikka/Työt/dating2/app/controllers/users_controller.rb",
+		"/Users/marikka/Työt/dating2/dating2.sublime-project",
+		"/Users/marikka/Työt/dating2/app/views/home/index.html.erb",
+		"/Users/marikka/Työt/tanko/db/migrate/20120213215515_add_attend_queue_email_template_and_attend_queue_email_subject_to_option.rb",
+		"/Users/marikka/Työt/tanko/app/controllers/lesson_types_controller.rb",
+		"/Users/marikka/Työt/tanko/app/views/lesson_types/index.html.slim",
+		"/Users/marikka/Työt/tanko/app/views/lessons/index.html.slim",
+		"/Users/marikka/Työt/tanko/app/helpers/application_helper.rb",
+		"/Users/marikka/Työt/tanko/Gemfile",
+		"/Users/marikka/Työt/tanko/app/views/users/index.html.slim",
+		"/Users/marikka/Työt/tanko/app/views/lesson_types/show.html.slim",
+		"/Users/marikka/Työt/tanko/config/initializers/devise.rb",
+		"/Users/marikka/Työt/tanko/db/seeds.rb",
+		"/Users/marikka/Työt/tanko/app/models/user.rb",
+		"/Users/marikka/Työt/tanko/app/views/users/show.html.slim",
+		"/Users/marikka/Työt/tanko/app/models/attendance.rb",
+		"/Users/marikka/Työt/tanko/app/views/lessons/show.html.slim",
+		"/Users/marikka/Työt/tanko/app/controllers/attendances_controller.rb",
+		"/Users/marikka/Työt/tanko/app/models/lesson_type.rb",
+		"/Users/marikka/Työt/tanko/app/controllers/lessons_controller.rb",
+		"/Users/marikka/Työt/tanko/app/controllers/users_controller.rb",
+		"/Users/marikka/Työt/tanko/config/locales/tanko.fi.yml",
+		"/Users/marikka/Työt/tanko/app/mailers/user_mailer.rb",
+		"/Users/marikka/Työt/tanko/db/schema.rb",
+		"/home/marikka/dev/tanko/app/views/devise/passwords/new.html.slim",
+		"/home/marikka/dev/tanko/app/views/devise/passwords/edit.html.slim",
+		"/home/marikka/dev/tanko/app/views/devise/mailer/reset_password_instructions.html.erb",
+		"/home/marikka/dev/tanko/public/stylesheets/sass/main.scss",
+		"/home/marikka/dev/tanko/app/views/lessons/own.html.slim",
+		"/home/marikka/dev/tanko/app/models/user.rb",
+		"/home/marikka/dev/tanko/app/views/lessons/show.html.slim",
+		"/home/marikka/dev/tanko/app/models/lesson.rb",
+		"/home/marikka/dev/tanko/app/views/layouts/application.html.slim",
+		"/home/marikka/dev/tanko/app/views/lessons/index.html.slim",
+		"/home/marikka/dev/tanko/app/views/lessons/_lesson_box.html.slim",
+		"/home/marikka/dev/tanko/app/views/lesson_types/index.html.slim",
+		"/home/marikka/dev/tanko/config/locales/tanko.fi.yml",
+		"/home/marikka/dev/tanko/app/views/lessons/_index_table.html.slim",
+		"/home/marikka/dev/tanko/app/views/devise/registrations/new.html.slim",
+		"/Users/marikka/Työt/tanko/tanko.sublime-project",
+		"/home/marikka/dev/tanko/app/views/devise/registrations/edit.html.slim",
+		"/home/marikka/dev/tanko/config/locales/fi.yml",
+		"/home/marikka/dev/tanko/config/locales/devise.fi.yml",
+		"/home/marikka/dev/tanko/config/locales/devise.en.yml",
+		"/home/marikka/dev/tanko/app/views/devise/shared/_links.erb",
+		"/home/marikka/dev/tanko/app/views/lessons/show.csv.erb",
+		"/home/marikka/dev/tanko/app/views/users/index.html.slim",
+		"/home/marikka/dev/tanko/app/views/users/show.html.slim",
+		"/home/marikka/dev/tanko/app/views/lessons/_form.html.erb",
+		"/home/marikka/dev/tanko/app/controllers/lessons_controller.rb",
+		"/home/marikka/dev/tanko/app/controllers/lesson_types_controller.rb",
+		"/home/marikka/dev/tanko/app/views/devise/sessions/new.html.slim",
+		"/home/marikka/dev/tanko/app/models/attendance.rb",
+		"/home/marikka/dev/tanko/app/views/devise/registrations/edit.html.erb",
+		"/home/marikka/dev/tanko/app/views/devise/unlocks/new.html.erb",
+		"/home/marikka/dev/tanko/app/views/devise/confirmations/new.html.erb"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"this.users",
+			"updateUsersList",
+			"this.targetUserId",
+			"videos",
+			"addStream",
+			"connectToUser",
+			"newAnswer",
+			"ui",
+			"this.lo",
+			"receivedIce",
+			"onIceCan",
+			"local",
+			"ui",
+			"localVideoStr",
+			"receivedIce",
+			"usersList",
+			"remoteVideo",
+			"connectButton",
+			"localVideo",
+			"addStream",
+			"setRemoteDe",
+			"setLocal",
+			"gotLocalDesc",
+			"setLocal",
+			"setRemote",
+			"setLocalDesc",
+			"addUser",
+			"localVideostream",
+			"addStream",
+			"createanswer",
+			"answer",
+			"gotLocalIce",
+			"gotlocalice",
+			"false",
+			"ilm",
+			"ilmoi",
+			"terms_of_use",
+			"forgot",
+			"Epäkelpo",
+			"=",
+			"      =",
+			"actions",
+			"Luo tun",
+			"LessonType",
+			"lesson_type",
+			"name",
+			"kirjautuminen",
+			"narrow",
+			"40px",
+			"40",
+			"333",
+			"narrow",
+			"666",
+			"66",
+			"66666",
+			"666",
+			"form_for",
+			"render",
+			"120",
+			"oppi",
+			"start_time",
+			"main",
+			"body",
+			"date",
+			"name",
+			"40",
+			"current",
+			".entry-date",
+			".entry-meta",
+			"Category",
+			"widget-area",
+			".singular .hentry",
+			"singular .hentr",
+			"entry-title",
+			".widget",
+			"#primary .blog"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Location",
+			"location"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/layout.jade",
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/index.jade",
+					"settings":
+					{
+						"buffer_size": 335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/js/controllers.js",
+					"settings":
+					{
+						"buffer_size": 652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/js/services.js",
+					"settings":
+					{
+						"buffer_size": 1176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/js/app.js",
+					"settings":
+					{
+						"buffer_size": 563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								513,
+								513
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/partials/users.jade",
+					"settings":
+					{
+						"buffer_size": 48,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Users index",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/partials/register.jade",
+					"settings":
+					{
+						"buffer_size": 100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 2260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								351,
+								351
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.770827638621,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"edit",
+				"app/views/instructors/edit.html.slim"
+			],
+			[
+				"instr",
+				"/home/marikka/dev/tanko/app/controllers/instructors_controller.rb"
+			],
+			[
+				"lesson",
+				"/home/marikka/dev/tanko/app/controllers/lesson_types_controller.rb"
+			],
+			[
+				"lessons",
+				"/home/marikka/dev/tanko/app/controllers/lessons_controller.rb"
+			],
+			[
+				"user",
+				"/home/marikka/dev/tanko/app/controllers/users_controller.rb"
+			],
+			[
+				"developme",
+				"/home/marikka/dev/tanko/app/views/lesson_types/edit.html.erb"
+			],
+			[
+				"devel",
+				"/home/marikka/dev/tanko/config/environments/development.rb"
+			],
+			[
+				"tanko",
+				"/home/marikka/dev/tanko/config/locales/tanko.fi.yml"
+			],
+			[
+				"main",
+				"/home/marikka/dev/tanko/public/stylesheets/sass/main.scss"
+			],
+			[
+				"tank",
+				"/home/marikka/dev/tanko/config/locales/tanko.fi.yml"
+			],
+			[
+				"inde",
+				"/home/marikka/dev/tanko/app/views/users/index.csv.erb"
+			],
+			[
+				"index",
+				"/home/marikka/dev/tanko/app/views/users/index.html.slim"
+			],
+			[
+				"pop",
+				"/home/marikka/dev/tanko/lib/tasks/populate.rake"
+			],
+			[
+				"tan",
+				"/home/marikka/dev/tanko/config/locales/tanko.fi.yml"
+			],
+			[
+				"show",
+				"/home/marikka/dev/tanko/app/views/lessons/show.html.slim"
+			],
+			[
+				"fi",
+				"/home/marikka/dev/tanko/config/locales/fi.yml"
+			],
+			[
+				"t",
+				"/home/marikka/dev/tanko/config/locales/tanko.fi.yml"
+			],
+			[
+				"atte",
+				"/home/marikka/dev/tanko/app/controllers/attendances_controller.rb"
+			],
+			[
+				"users",
+				"/home/marikka/dev/tanko/app/controllers/users_controller.rb"
+			],
+			[
+				"fin",
+				"Find Results"
+			],
+			[
+				"tanko.fi",
+				"/home/marikka/dev/tanko/config/locales/tanko.fi.yml"
+			],
+			[
+				"find",
+				"Find Results"
+			],
+			[
+				"applica",
+				"/home/marikka/dev/tanko/app/views/layouts/application.html.erb"
+			],
+			[
+				"contro",
+				"/home/marikka/dev/tanko/app/controllers/attendances_controller.rb"
+			],
+			[
+				"ap",
+				"/home/marikka/dev/tanko/app/views/layouts/application.html.erb"
+			],
+			[
+				"feat",
+				"/home/marikka/dev/tanko/features/step_definitions/tanko_steps.rb"
+			],
+			[
+				"contr",
+				"/home/marikka/dev/tanko/app/controllers/attendances_controller.rb"
+			],
+			[
+				"controll",
+				"/home/marikka/dev/tanko/app/controllers/lessons_controller.rb"
+			],
+			[
+				"attendan",
+				"/home/marikka/dev/tanko/app/controllers/attendances_controller.rb"
+			],
+			[
+				"atten",
+				"/home/marikka/dev/tanko/app/controllers/attendances_controller.rb"
+			],
+			[
+				"steps",
+				"/home/marikka/dev/tanko/features/step_definitions/tanko_steps.rb"
+			],
+			[
+				"ste",
+				"/home/marikka/dev/tanko/features/step_definitions/tanko_steps.rb"
+			],
+			[
+				"pat",
+				"/home/marikka/dev/tanko/features/support/paths.rb"
+			],
+			[
+				"step",
+				"/home/marikka/dev/tanko/features/step_definitions/tanko_steps.rb"
+			],
+			[
+				"",
+				"untitled"
+			],
+			[
+				"f",
+				"/home/marikka/dev/tanko/config/locales/fi.yml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/marikka/dev/tommituominen/tommituominen.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 309.0,
+	"status_bar_visible": true
+}
