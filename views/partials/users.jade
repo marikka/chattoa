@@ -1,5 +1,6 @@
-video(id="local-video", autoplay, local-video)
+div(ng-repeat="user in usersService.users")
+  p {{user.name}}
+  p {{user.stream.id}}
 
-div(ng-repeat="user in usersService.users", ng-controller="UserCtrl")
-  p {{user.name}} 
+  video(attach-stream="user.stream", autoplay) 
   a(href="", ng-click="connect(user.id)") connect

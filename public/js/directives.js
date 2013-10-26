@@ -3,12 +3,7 @@
 /* Directives */
 
 
-angular.module('myApp.directives', []).
-  directive('appVersion', ['version', function(version) {
-    return function(scope, elm, attrs) {
-      elm.text(version);
-    };
-  }])
+angular.module('myApp.directives', [])
   //Attach stream to video element when it becomes available
   .directive('attachStream', function(){
   	return function(scope, element, attrs){
@@ -17,5 +12,11 @@ angular.module('myApp.directives', []).
   				attachMediaStream(element[0], newValue);	
   			}
 		});
+
+		scope.$watch(attrs.attachStream, function(value) {
+			if (value !== undefined) {
+  				attachMediaStream(element[0], value);	
+  			}
+      	});
   	}
   });

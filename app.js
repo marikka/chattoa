@@ -65,7 +65,7 @@ io.sockets.on('connection', function (socket) {
       id: socket.id,
       name: name
     };
-    socket.emit('ownUserId', socket.id);
+    socket.emit('registerUserSuccess', socket.id);
     io.sockets.emit('publishUsers', users);
   });
 

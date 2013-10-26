@@ -32,18 +32,11 @@ function RegisterCtrl($scope, usersService, $location){
   getUserMedia(constraints, successCallback, errorCallback);
 
   $scope.register = function(){
-    usersService.register($scope.name, $scope.stream);
+    usersService.register($scope.user.name, $scope.stream);
     //TODO: instead of redirecting now, redirect when the user gets his id from the server
-    $location.path('/users');
   }
 }
 
 function UsersCtrl($scope, usersService){ 
   $scope.usersService = usersService;
-}
-
-function UserCtrl ($scope) {
-  $scope.connect = function(id){ 
-    alert(id + " oujeah");
-  }; 
 }

@@ -35,11 +35,22 @@ angular.module('myApp.services', []).
 
 
   //User factory
-  .factory('usersService', function($rootScope, socketService){
-    
+  .factory('usersService', function($rootScope, socketService, $location){
+
     var usersService = {
       register: function(name, stream){
         socketService.emit('registerUser', name);
+
+        //When we get the ok from the server, add the user to the list
+        socketService.on('registerUserSuccess', function(id){
+          this.users[id] = {
+            id: id,
+            name: name,
+            stream: stream
+          };
+
+          $location.path('/users');
+        }.bind(this));
       },
       getList: function(){
         socketService.emit('requestUsers');
@@ -48,7 +59,7 @@ angular.module('myApp.services', []).
     };
 
     socketService.on('publishUsers', function(newList){
-        usersService.users = newList;
+      //usersService.users = newList;
     });
 
     //Get the initial list of users
