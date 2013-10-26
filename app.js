@@ -55,12 +55,16 @@ io.sockets.on('connection', function (socket) {
   });
 
   socket.on('requestUsers', function(){
+    console.log("foooo", users);
     io.sockets.emit('publishUsers', users);  
   });
 
   socket.on('registerUser', function (name){
     socket.set('userName', name);
-    users[socket.id] = {name: name};
+    users[socket.id] = {
+      id: socket.id,
+      name: name
+    };
     socket.emit('ownUserId', socket.id);
     io.sockets.emit('publishUsers', users);
   });

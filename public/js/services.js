@@ -38,7 +38,7 @@ angular.module('myApp.services', []).
   .factory('usersService', function($rootScope, socketService){
     
     var usersService = {
-      register: function(name){
+      register: function(name, stream){
         socketService.emit('registerUser', name);
       },
       getList: function(){

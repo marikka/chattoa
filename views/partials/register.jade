@@ -1,3 +1,5 @@
 h1 Who are you?
+
+video(attach-stream, autoplay)
 input(type="text", ng-model="user.name")
-button(ng-click="register(user.name)") SAVE
+button(ng-click="register()", ng-disabled="!stream || !user.name") Register

@@ -6,6 +6,6 @@ var app = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.dir
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.when('/register', {templateUrl: 'partials/register', controller: RegisterCtrl});
     $routeProvider.when('/users', {templateUrl: 'partials/users', controller: UsersCtrl});
-    $routeProvider.otherwise({redirectTo: '/register'});
-    $locationProvider.html5Mode(true);
+    //$routeProvider.otherwise({redirectTo: '/register'});
+    $locationProvider.html5Mode(false);
   }]);
