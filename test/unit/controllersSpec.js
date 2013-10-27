@@ -1,13 +1,13 @@
 describe('videoChat controllers', function() {
   beforeEach(module('videoChat.controllers'));
  
-  describe('AppCtrl', function(){
+  describe('UsersCtrl', function(){
  
     it('should foo', inject(function($controller) {
-      var scope = {},
-          ctrl = $controller('AppCtrl', { $scope: scope });
- 
-      expect(3).toBe(2);
+      	var scope = {},
+        ctrl = $controller('UsersCtrl', { $scope: scope });
+ 		
+      	expect(true).toBe(true);
 
     }));
   });

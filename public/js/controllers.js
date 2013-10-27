@@ -11,7 +11,7 @@ angular.module('videoChat.controllers', [])
 //i.e. getting his name & video stream
 .controller('RegisterCtrl', function RegisterCtrl($scope, usersService, $location){
   //request for video only
-  //(audio tends to loop back)
+  //(audio tends to feedback)
   var constraints = {audio: false, video: true};
 
   getUserMedia(constraints, 
@@ -27,13 +27,16 @@ angular.module('videoChat.controllers', [])
 
   $scope.register = function(){
     //Try to register with the server, the user is redirected when (if) it succeeds
-    usersService.register($scope.user.name, $scope.stream);
+    usersService.register($scope.user.name, $scope.stream, function(){
+      $location.path('/users');
+    });
   }
 })
 
 //This controller deals with presenting the list of users and their video streams
-.controller('UsersCtrl',function UsersCtrl($scope, usersService){ 
-  $scope.usersService = usersService;
+.controller('UsersCtrl',function UsersCtrl($scope, usersService){
+  $scope.users = {}; 
+  $scope.users.list = usersService.users;
   $scope.connect = function(id){
     usersService.connect(id);
   }

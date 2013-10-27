@@ -29,15 +29,14 @@ angular.module('videoChat.services', []).
     };
   })
 
-
   //Users service
   //This deals with managing the list of users, and communicating with the server (through socketService)
-  .factory('usersService', function($rootScope, socketService, $location){
+  .factory('usersService', function($rootScope, socketService){
 
     var usersService = {
       
       //Register a new user
-      register: function(name, stream){
+      register: function(name, stream, successCallback){
         socketService.emit('registerUser', name);
 
         //When we get the ok from the server, add the user to the list
@@ -51,7 +50,8 @@ angular.module('videoChat.services', []).
           this.localStream = stream;
 
           //Everything OK, redirect to main view
-          $location.path('/users');
+          successCallback.apply();
+      
         }.bind(this));
       },
       //Request a full list of users from the server
