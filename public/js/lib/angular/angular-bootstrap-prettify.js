@@ -1,5 +1,5 @@
 /**
- * @license AngularJS v1.0.5
+ * @license AngularJS v1.0.8
  * (c) 2010-2012 Google, Inc. http://angularjs.org
  * License: MIT
  */
@@ -189,7 +189,9 @@ directive.ngEmbedApp = ['$templateCache', '$browser', '$rootScope', '$location',
   return {
     terminal: true,
     link: function(scope, element, attrs) {
-      var modules = [];
+      var modules = [],
+          embedRootScope,
+          deregisterEmbedRootScope;
 
       modules.push(['$provide', function($provide) {
         $provide.value('$templateCache', $templateCache);
@@ -215,10 +217,12 @@ directive.ngEmbedApp = ['$templateCache', '$browser', '$rootScope', '$location',
             }
           }, $delegate);
         }]);
-        $provide.decorator('$rootScope', ['$delegate', function(embedRootScope) {
-          docsRootScope.$watch(function embedRootScopeDigestWatch() {
+        $provide.decorator('$rootScope', ['$delegate', function($delegate) {
+          embedRootScope = $delegate;
+          deregisterEmbedRootScope = docsRootScope.$watch(function embedRootScopeDigestWatch() {
             embedRootScope.$digest();
           });
+
           return embedRootScope;
         }]);
       }]);
@@ -229,6 +233,12 @@ directive.ngEmbedApp = ['$templateCache', '$browser', '$rootScope', '$location',
           event.preventDefault();
         }
       });
+
+      element.bind('$destroy', function() {
+        deregisterEmbedRootScope();
+        embedRootScope.$destroy();
+      });
+
       angular.bootstrap(element, modules);
     }
   };
@@ -290,6 +300,7 @@ service.getEmbeddedTemplate = ['reindentCode', function(reindentCode) {
 
 
 angular.module('bootstrapPrettify', []).directive(directive).factory(service);
+
 // Copyright (C) 2006 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -1828,6 +1839,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|[!=]=?=?|\\#|%=?|&&?=?|\\(|\\*=?|[
     });
   }
 })();
+
 
 })(window, window.angular);
 angular.element(document).find('head').append('<style type="text/css">.com{color:#93a1a1;}.lit{color:#195f91;}.pun,.opn,.clo{color:#93a1a1;}.fun{color:#dc322f;}.str,.atv{color:#D14;}.kwd,.linenums .tag{color:#1e347b;}.typ,.atn,.dec,.var{color:teal;}.pln{color:#48484c;}.prettyprint{padding:8px;background-color:#f7f7f9;border:1px solid #e1e1e8;}.prettyprint.linenums{-webkit-box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0;-moz-box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0;box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0;}ol.linenums{margin:0 0 0 33px;}ol.linenums li{padding-left:12px;color:#bebec5;line-height:18px;text-shadow:0 1px 0 #fff;}</style>');
