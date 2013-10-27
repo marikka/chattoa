@@ -1,8 +1,3 @@
-
-/**
- * Module dependencies.
- */
-
 var express = require('express'),
   routes = require('./routes');
 
@@ -16,7 +11,6 @@ var io = require('socket.io').listen(server);
 io.set('log level', 1);
 
 // Configuration
-
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -35,32 +29,30 @@ app.configure('production', function(){
 });
 
 // Routes
-
 app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
 
-// redirect all others to the index (HTML5 history)
+// redirect all others to the index
 app.get('*', routes.index);
 
-
-
+//Maintain the users here
 var users = {};
 
 // Socket.io Communication
-
 io.sockets.on('connection', function (socket) {
 
   //Update user list on client disconnect
   socket.on('disconnect', function(){
-
     delete users[socket.id];
     socket.emit('publishUsers', users);  
   });
 
+  //User requests list of users
   socket.on('requestUsers', function(){
     io.sockets.emit('publishUsers', users);  
   });
 
+  //User registers himself
   socket.on('registerUser', function (name){
     socket.set('userName', name);
     users[socket.id] = {
@@ -94,7 +86,6 @@ io.sockets.on('connection', function (socket) {
 });
 
 // Start server
-
 server.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });

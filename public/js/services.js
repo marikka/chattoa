@@ -1,9 +1,10 @@
 'use strict';
 
 /* Services */
-angular.module('myApp.services', []).
+angular.module('videoChat.services', []).
 
-  //Socket factory
+  //Socket service
+  //This deals with setting up and communicating through socket.io
   factory('socketService', function ($rootScope) {
     var socketio = io.connect();
     return {
@@ -29,10 +30,13 @@ angular.module('myApp.services', []).
   })
 
 
-  //User factory
+  //Users service
+  //This deals with managing the list of users, and communicating with the server (through socketService)
   .factory('usersService', function($rootScope, socketService, $location){
 
     var usersService = {
+      
+      //Register a new user
       register: function(name, stream){
         socketService.emit('registerUser', name);
 
@@ -46,17 +50,19 @@ angular.module('myApp.services', []).
 
           this.localStream = stream;
 
+          //Everything OK, redirect to main view
           $location.path('/users');
         }.bind(this));
       },
+      //Request a full list of users from the server
       getList: function(){
         socketService.emit('requestUsers');
       },
+      //Connect to a user by id
       connect: function(id){
         this.users[id].peerConnection = new PeerConnection(this, this.localStream);
         this.users[id].peerConnection.connect(id);
       },
-      //------
       //3 Send offer to target
       sendOffer: function(targetUserId, description){
         console.log("3: send offer to " + targetUserId);
@@ -79,7 +85,6 @@ angular.module('myApp.services', []).
       receiveAnswer: function(originUserId, targetUserId, description){
         console.log("10: received answer from target " + targetUserId + " to origin " + originUserId);
         this.users[targetUserId].peerConnection.receiveAnswer(targetUserId, description);
-        //this.peerConnections[targetUserId].receiveAnswer(originUserId, description);
       },
       newIceCandidate: function(targetUserId, candidate){
         console.log("M: new ICE candidate");
@@ -97,11 +102,11 @@ angular.module('myApp.services', []).
         }.bind(this));
       },
 
+      //Maintain local list of users in this object
       users: {}
     };
 
     //Bind to inbound socket messages
-
     //Get new list of users from server
     socketService.on('publishUsers', function(newList){
       //Add new users to the current list

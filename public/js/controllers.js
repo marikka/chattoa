@@ -3,40 +3,35 @@
 /* Controllers */
 
 function AppCtrl($scope, $location) {
-
-
   $location.path('/register');
-
-
-
-
-
 }
 
 //This controller takes care of registering the local user
 //i.e. getting his name & video stream
 function RegisterCtrl($scope, usersService, $location){
 
+  //request for video only
+  //(audio tends to loop back)
   var constraints = {audio: false, video: true};
 
-  var successCallback = function(stream) {
-    $scope.$apply(function(){
-      $scope.stream = stream;  
+  getUserMedia(constraints, 
+    //success callback
+    function(stream) {
+      $scope.$apply(function(){
+        $scope.stream = stream;  
+      })}, 
+    //error callvack
+    function(error){
+      console.log("navigator.getUserMedia error: ", error);
     });
-  };
-
-  var errorCallback = function(error){
-    console.log("navigator.getUserMedia error: ", error);
-  }; 
-
-  getUserMedia(constraints, successCallback, errorCallback);
 
   $scope.register = function(){
+    //Try to register with the server, the user is redirected when (if) it succeeds
     usersService.register($scope.user.name, $scope.stream);
-    //TODO: instead of redirecting now, redirect when the user gets his id from the server
   }
 }
 
+//This controller deals with presenting the list of users and their video streams
 function UsersCtrl($scope, usersService){ 
   $scope.usersService = usersService;
   $scope.connect = function(id){

@@ -1,7 +1,11 @@
+//This object represents a connection between two peers and manages the per-connection
+//It uses the connection manager to relay the information through the server while negotiating a connection
 var PeerConnection = function(connectionManager, localVideoStream ){
   var pc = {
     init: function(){
       this.rtcPeerConnection = new RTCPeerConnection(null);
+
+      //Bind callbacks for RTCPeerConnection lifecycle events
       this.rtcPeerConnection.onaddstream            = this.onRemoteStreamAdded.bind(this);
       this.rtcPeerConnection.onremovestream         = this.onRemoteStreamRemoved.bind(this);
       this.rtcPeerConnection.onsignalingstatechange = this.onSignalingStateChange.bind(this);
@@ -49,8 +53,8 @@ var PeerConnection = function(connectionManager, localVideoStream ){
       this.connectionManager.addStreamToUser(this.peerUserId, event.stream);
     },
     onRemoteStreamRemoved: function(event){
-      console.log("remote stream removed");  
-      this.ui.remoteVideo.src = '';    
+      console.log("remote stream removed");
+      //TODO: Actually do something here
     },
     onSignalingStateChange: function(event){
       console.log("Signaling state change: ", event);
