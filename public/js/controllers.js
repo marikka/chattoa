@@ -39,4 +39,7 @@ function RegisterCtrl($scope, usersService, $location){
 
 function UsersCtrl($scope, usersService){ 
   $scope.usersService = usersService;
+  $scope.connect = function(id){
+    usersService.connect(id);
+  }
 }

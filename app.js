@@ -12,6 +12,9 @@ var server = require('http').createServer(app);
 // Hook Socket.io into Express
 var io = require('socket.io').listen(server);
 
+//Set Socket.io logging
+io.set('log level', 1);
+
 // Configuration
 
 app.configure(function(){
@@ -55,7 +58,6 @@ io.sockets.on('connection', function (socket) {
   });
 
   socket.on('requestUsers', function(){
-    console.log("foooo", users);
     io.sockets.emit('publishUsers', users);  
   });
 
@@ -70,21 +72,23 @@ io.sockets.on('connection', function (socket) {
   });
 
   //4 A client sent a connection offer
-  socket.on('sendOffer', function(targetUserId, description){
-    console.log("sendOffer: ", targetUserId);
+  socket.on('sendOffer', function(data){
+    var targetUserId = data[0];
+    var description  = data[1];
+    console.log("4: relay offer to: ", targetUserId);
     //TODO: Check that target (still) exists
     io.sockets.socket(targetUserId).emit("receiveOffer", socket.id, description);
   });
 
   //9
-  socket.on('sendAnswer', function(originUserId, description){
-    console.log("got answer from " + socket.id + " to " + originUserId);
-    io.sockets.socket(originUserId).emit("receiveAnswer", originUserId, socket.id, description);
+  socket.on('sendAnswer', function(data){
+    console.log("9: got answer from " + socket.id + " to " + data.originUserId);
+    io.sockets.socket(data.originUserId).emit("receiveAnswer", data.originUserId, socket.id, data.description);
   })
 
-  socket.on('newIceCandidate', function(targetUserId, candidate){
-    console.log("got candidate: ", candidate);
-    io.sockets.socket(targetUserId).emit("receivedIceCandidate", socket.id, candidate);
+  socket.on('newIceCandidate', function(data){
+    console.log("got candidate: ", data.candidate);
+    io.sockets.socket(data.targetUserId).emit("receivedIceCandidate", socket.id, data.candidate);
   })
 
 });
