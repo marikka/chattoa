@@ -1,7 +1,7 @@
 h2 Users
 div(ng-repeat="user in usersService.users", class="user")
-  h3 {{user.name}}
+  h3(class="user-name") {{user.name}}
   h4(class="user-id") ({{user.id}})
 
   video(attach-stream="user.stream", autoplay) 
-  a(href="",ng-hide="user.stream", ng-click="connect(user.id)") connect
+  a(class="connect", href="",ng-hide="user.stream", ng-click="connect(user.id)") connect
