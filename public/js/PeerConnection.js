@@ -1,4 +1,5 @@
-//This object represents a connection between two peers and manages the per-connection
+'use strict';
+//This object represents a connection between two peers and manages the per-connection aspects
 //It uses the connection manager to relay the information through the server while negotiating a connection
 var PeerConnection = function(connectionManager, localVideoStream ){
   var pc = {
